@@ -1,0 +1,130 @@
+Insight Pertanyaan 1
+"Hampir 4 dari 10 pelanggan sudah berhenti. Sebanyak 58 dari 148 pelanggan belum menyelesaikan 
+pesanan sejak sekitar 29 Maret 2024, atau lebih dari 90 hari sebelum tanggal pesanan terakhir di 
+data."
+"Sebagian besar berhenti sudah lama. Sepuluh pelanggan teratas terakhir berbelanja antara Februari 
+dan September 2023. Dimas Firmansyah paling lama, 494 hari sejak pesanan terakhirnya. Ini
+menunjukkan churn yang menumpuk, bukan penurunan yang baru terjadi."
+"Makassar dan Semarang paling banyak muncul di daftar. Tiga dari sepuluh pelanggan teratas berasal 
+dari Makassar, dan dua dari Semarang. Daftar ini diurutkan berdasarkan lama tidak berbelanja, jadi 
+belum tentu mewakili jumlah pelanggan berhenti per kota."
+"Angka ini sejalan dengan analisis repeat buyer. Pelanggan aktif dalam 90 hari terakhir berjumlah 90 
+orang. Angka ini mendekati 91 pelanggan aktif dalam 3 bulan terakhir dari query 2. Selisih satu orang 
+terjadi karena definisi 90 hari dan 3 bulan tidak sama persis."
+
+Rekomendasi Strategi Pertanyaan 1
+"Mulai reaktivasi dari pelanggan yang baru berhenti. Pelanggan yang berhenti sekitar 90 sampai 180 
+hari masih lebih mudah dijangkau dibanding yang sudah lebih dari setahun. Prioritaskan kelompok ini 
+dengan promo atau pengingat sederhana."
+"Turunkan ambang peringatan dini menjadi 60 hari. Dengan 90 hari, pelanggan baru terdeteksi setelah 
+sudah terlalu lama pergi. Tim bisa mendapat daftar setiap bulan, sehingga tindakan bisa dilakukan 
+sebelum pelanggan benar-benar hilang."
+"Pisahkan pelanggan yang benar-benar berhenti dari yang pesanannya masih berjalan. Beberapa 
+pelanggan di daftar mungkin masih punya pesanan Diproses atau Dikirim, yang tidak dihitung di 
+analisis ini. Cek dulu status mereka sebelum menghubungi, agar tidak mengganggu pelanggan yang 
+sebenarnya sedang menunggu pesanan."
+"Lakukan kampanye lokal di Makassar dan Semarang. Dua kota ini punya jumlah pelanggan berhenti 
+yang relatif banyak di daftar teratas. Uji promo atau kunjungan lokal di sana dulu sebelum diperluas."
+"Ukur hasil reaktivasi dengan kelompok pembanding. Bagi pelanggan berhenti menjadi dua kelompok: 
+satu dihubungi, satu tidak. Bandingkan tingkat kembali belanja di antara keduanya setelah beberapa 
+minggu. Ini membuktikan apakah kampanye benar-benar berhasil, bukan hanya kebetulan."
+
+
+Insight Pertanyaan 2
+"Hampir semua pelanggan kembali berbelanja. Dari 148 pelanggan dengan pesanan Selesai, 143 
+(96,6%) punya lebih dari satu pesanan. Ini sama dengan jumlah repeat buyer di query 2."
+"Jeda antar pesanan cukup lebar. Median jarak antar pesanan 53 hari, tetapi rata-ratanya 74 hari. 
+Perbedaan ini menunjukkan ada sebagian pelanggan yang kembali jauh lebih lama, yang menarik rata-rata ke atas."
+"Sebagian pelanggan sangat cepat kembali. Seperempat pelanggan kembali dalam 22 hari atau 
+kurang. Ini kelompok yang paling loyal dan sudah punya kebiasaan belanja."
+"Sebagian lain menunggu lama. Seperempat pelanggan teratas baru kembali setelah 102 hari atau 
+lebih, dan jarak maksimalnya 433 hari. Mereka lebih mudah hilang jika tidak didorong."
+
+Rekomendasi Strategi Pertanyaan 2
+"Kirim pengingat sekitar 50 sampai 55 hari setelah pesanan terakhir. Titik ini sudah dilewati separuh 
+pelanggan dalam jangka waktu yang sama, jadi pengingat di sekitar sini menyasar pelanggan yang 
+mulai melambat."
+"Bagi pelanggan menjadi tiga kelompok berdasarkan jeda belanja. Kelompok cepat (di bawah 22 hari), 
+kelompok normal (22 sampai 102 hari), dan kelompok lambat (di atas 102 hari). Setiap kelompok 
+diberi perlakuan berbeda, misalnya program loyalitas untuk yang cepat dan promo reaktivasi untuk 
+yang lambat."
+"Dorong pembelian kedua lebih cepat. Karena pelanggan yang sudah kembali sekali cenderung terus 
+berbelanja, fokus pada pesanan kedua. Misalnya dengan diskon pembelian berikutnya dalam 30 hari 
+setelah pesanan pertama."
+"Hindari pengingat terlalu cepat. Pelanggan yang baru 0 sampai 10 hari sejak pesanan terakhir sudah 
+sering kembali sendiri, sehingga pengingat dini bisa terasa mengganggu."
+
+
+Insight Pertanyaan 3
+"Tidak ada pasangan produk yang benar-benar menonjol. Pasangan teratas, Earphone Bluetooth dan 
+Keyboard Slim, hanya muncul 10 kali dari 913 pesanan Selesai. Pasangan lain hanya 8 sampai 9 kali, 
+dan jumlah ini berada dekat dengan perkiraan kebetulan, yaitu sekitar 3 sampai 4 kali per pasangan."
+"Earphone Bluetooth paling sering muncul di daftar. Produk ini ada di lima dari sepuluh pasangan 
+teratas. Artinya, Earphone Bluetooth cukup sering dibeli bersama produk lain, tetapi tidak ada satu 
+produk pendamping yang dominan."
+"Pasangan dengan Kemeja Flanel dan Mouse Wireless juga muncul. Mouse Wireless ada di dua 
+pasangan dengan Gelas Kaca dan Blender Portable, sementara Kemeja Flanel muncul di dua 
+pasangan lainnya. Pola ini tidak kuat, tetapi menunjukkan produk dari kategori berbeda kadang dibeli 
+bersama."
+"Dataset hanya punya 1 sampai 4 item per pesanan. Dengan jumlah item sekecil itu, peluang dua 
+produk tertentu muncul bersama sangat kecil, sehingga pasangan yang menonjol sulit ditemukan dari 
+data ini."
+
+Rekomendasi Strategi Pertanyaan 3
+"Jangan membuat paket bundling dari hasil ini. Pasangan teratas belum cukup kuat untuk dijadikan 
+dasar keputusan harga atau promosi. Risikonya, bundling justru menurunkan margin tanpa 
+menambah penjualan."
+"Uji Earphone Bluetooth sebagai produk pemicu. Karena produk ini paling sering muncul di daftar, 
+coba tawarkan rekomendasi Keyboard Slim atau Skipping Rope saat pelanggan membeli Earphone 
+Bluetooth. Ukur apakah tingkat pembelian bersama naik dibanding tanpa rekomendasi."
+"Kumpulkan lebih banyak data sebelum menyimpulkan. Untuk mengetahui pola belanja yang sebenarnya, perlu ratusan atau ribuan pesanan dengan item lebih banyak per transaksi. Data dari periode lebih panjang juga membantu."
+"Gunakan ukuran yang lebih tepat dari sekadar jumlah. Selain frekuensi, hitung juga lift, yaitu 
+seberapa sering dua produk muncul bersama dibanding yang seharusnya terjadi jika acak. Lift di atas 
+1 menunjukkan pasangan yang lebih kuat."
+
+
+Insight Pertanyaan 4
+"Diskon tidak mendorong jumlah barang yang lebih banyak. Rata-rata jumlah barang tanpa diskon 
+adalah 3,04, sedangkan dengan diskon 2,93. Selisihnya kecil, dan arahnya justru berlawanan dengan 
+dugaan awal."
+"Selisih itu tidak signifikan. P-value 0,105 berada di atas 0,05, sehingga perbedaan tersebut bisa 
+terjadi karena kebetulan."
+"Besar diskon tidak memengaruhi hasil. Diskon 5% (2,90), 10% (2,98), dan 15% (2,89) tidak 
+menunjukkan pola naik atau turun. Diskon yang lebih besar tidak menghasilkan jumlah barang yang 
+lebih banyak."
+"Median sama di kedua kelompok. Median 3,0 baik untuk yang diberi diskon maupun tidak, sehingga 
+mayoritas baris transaksi berisi jumlah barang yang sama."
+
+Rekomendasi Strategi Pertanyaan 4
+"Jangan menaikkan besar diskon dengan harapan volume naik. Data ini tidak mendukung asumsi 
+bahwa diskon yang lebih besar mendorong pembelian lebih banyak. Menaikkan diskon justru bisa 
+mengurangi margin tanpa manfaat yang jelas."
+"Uji diskon secara terkontrol sebelum memutuskan. Misalnya, dalam satu periode tertentu, beri diskon 
+pada sebagian produk atau sebagian pelanggan secara acak, lalu bandingkan hasilnya dengan 
+kelompok yang tidak diberi diskon."
+"Ukur dampak diskon pada pendapatan, bukan hanya jumlah barang. Diskon yang tidak menambah 
+jumlah barang bisa tetap menambah jumlah pesanan atau pelanggan baru. Pengukuran yang lebih 
+lengkap akan memberi gambaran yang berbeda."
+"Gunakan metrik lain untuk melihat efek diskon. Misalnya, bandingkan jumlah pelanggan baru, tingkat 
+repeat buyer, atau total nilai pesanan. Jumlah barang per baris saja belum cukup untuk menilai program 
+diskon."
+
+
+Insight Pertanyaan 5
+"Nilai pesanan yang tertahan mencapai Rp 804 juta. Angka ini berasal dari 252 pesanan, dengan 134 
+berstatus Dikirim (Rp 436,8 juta) dan 118 berstatus Diproses (Rp 367,6 juta)."
+"Hampir seluruh nilai tertahan sudah lama. Sebanyak 242 pesanan, atau Rp 757,9 juta, berumur lebih 
+dari 30 hari. Ini sekitar 94% dari total nilai tertahan, sehingga hanya sebagian kecil yang masih 
+tergolong baru."
+"Nilai ini besar dibanding pendapatan yang sudah diakui. Total tertahan sekitar 28% dari pendapatan 
+pesanan Selesai sebesar Rp 2.872 juta. Ini bukan angka kecil yang bisa diabaikan."
+
+Rekomendasi Strategi Pertanyaan 5
+"Audit status pesanan yang paling lama. Mulai dari 242 pesanan lebih dari 30 hari. Cek satu per satu 
+apakah barang sudah sampai ke pelanggan, lalu ubah statusnya jika memang sudah selesai."
+"Tambahkan tanggal perubahan status ke sistem. Dengan kolom ini, tim bisa tahu berapa lama 
+pesanan berada di setiap tahap dan memberi peringatan otomatis jika terlalu lama."
+"Tetapkan batas waktu per status. Misalnya, pesanan Diproses lebih dari 3 hari dan Dikirim lebih dari 7 
+hari langsung ditinjau. Aturan ini membuat pesanan tertahan tidak menumpuk tanpa diketahui."
+"Jangan melaporkan Rp 804 juta sebagai piutang atau kerugian. Angka ini belum terbukti hilang. 
+Sampaikan sebagai nilai pesanan yang perlu diverifikasi, dengan prioritas pada yang paling lama."
